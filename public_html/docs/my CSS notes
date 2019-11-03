@@ -1,0 +1,43 @@
+These are my notes from the CSS Tutorial
+
+in the <head> section
+<link rel="stylesheet" href="style.css">
+
+'em' is a calculated size (2em = 2x current)
+
+Units:
+px, em, pt, %, pc, cm, mm, in
+
+Color specifications:
+	red
+	rgb(255,0,0)
+	rgb(100%,0%,0%)
+	#ff0000
+	#f00
+also: aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, silver, teal, white, and yellow. transparent ... + more
+
+font-family:
+	This is the font itself, such as "Times New Roman", Arial, or Verdana, helvetica
+	(can do: firstchoice, secondchoice)
+	(must be in "quotes if" more than one word)
+	
+
+font-size
+
+font-weight:
+	bold, normal, lighter, bolder, 100, 200,...,900
+	
+font-style:
+	italic, normal, oblique
+	
+font-variant: 
+	small-caps, inherit, normal
+	
+text-transform:
+	capitalize, lowercase, uppercase, etc
+	
+text-decoration:
+	underline (only links), overline, line-through
+	
+letter-spacing
+

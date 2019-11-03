@@ -1,0 +1,73 @@
+body {
+	font-size: 16px;
+	color: navy;
+	background-color: #90a0af;
+}
+
+h1 {
+	color:yellow;
+	background-color: blue;
+	color: #ff0;
+	background-color: #00f; 
+	
+}
+h2 {
+    font-size: 1.5em;
+    background-color: #ccc;
+    margin: 40px;
+    padding: 20px;
+/*
+    background-color: #ccc;
+    margin: 20px;
+    padding: 40px;
+*/
+}
+h4 {
+	margin: 2px;
+	margin-top: auto;
+	
+}
+span {
+	display: block;
+	margin-left: 20px;
+}
+.weight {
+	font-weight: 100;
+	font-weight: 200;
+	font-weight: 300;
+	font-weight: 400;
+	font-weight: 500;
+	font-weight: 600;
+}
+.style {
+	font-style: italic;
+	font-style: normal;
+	font-style: oblique;
+}
+.variant {
+	font-variant: small-caps;
+	font-variant:inherit;
+	font-variant: normal;
+}
+.transform {
+	text-transform: capitalize;
+	text-transform: full-width;
+	text-transform: inherit;
+	text-transform: lowercase;
+	text-transform: none;
+	text-transform: uppercase;
+}
+div {
+	margin-top: 15px;
+}
+code:before {
+	content: "<";
+}
+code:after {
+	content: ">";
+	position: relative;
+	top: auto;
+}
+p::aside {
+	color:aqua;
+}

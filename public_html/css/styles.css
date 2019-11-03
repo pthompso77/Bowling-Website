@@ -1,0 +1,71 @@
+.testing {
+    border: 1px dotted yellow;
+}
+.bodytest {
+    border: 3px solid red
+}
+/* 
+    Stylesheet for stylistic effects only
+*/
+body {
+    font-family:InaiMathi,Verdana,sans-serif;
+    font-size: 14px;
+    background-color: #C7818A;
+}
+.primaryHeader {
+    font-size: 70px;
+}
+.primaryHeader * {
+    text-align: center;
+}
+.primaryFooter {
+    text-align: center;
+    /*    color: #FFFFFF;            
+        background-color: #06ADF2;
+        border-bottom: 5px solid #2C9AB7;*/
+}
+.hasBorder {
+    border: 1px solid #707070;
+}
+.NavBarText {
+    background-color: #FFFFFF;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+Input Form
+*/
+.formTitle {
+    font-size: 30px;
+    font-weight: 300;
+    border: 2px black solid;
+    border-bottom-width: 0;
+    text-align: center;
+}
+.formContainer {
+    border: 2px black solid;
+    border-top-width: 0;    
+}
+input[type=text], input[type=email], textarea {
+    font-family: Verdana,sans-serif;
+    font-size: 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+}
+input:focus {
+    outline-width: 0;
+    border: 1px solid #3A6941;
+}
+input[type=submit] {
+    font-family: Verdana,sans-serif;
+    font-size: 16px;
+    background-color: #CB1357;
+    color: #090071;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    border: 2px solid green;
+}
+input[type=submit]:hover {
+    background-color: #A01050;
+}

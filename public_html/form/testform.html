@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Send Us A Message</title>
+	<link rel="icon" type="image/x-icon" href="#"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+	
+<body>	
+<!--	testing-->
+<!--	<hr style="margin: 50px 0">	-->
+	<style id="resets">
+		html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+		article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+	</style>	
+	<style id="just-Style">
+	/*		Style*/
+		.wrapper * {
+			border: .5px dotted gray;
+		}
+		.wrapper, .form-wrapper {
+			border: 10px solid #ccc;
+			margin-bottom: 20px;
+		}
+		.box {
+			border: 10px solid #999;
+		}
+		#BoxNumber1 {
+			right: 0;
+		}
+	</style>
+	<style id="just-Positioning">		
+	/*		Position*/
+		* {
+			box-sizing: border-box;
+		}
+		.wrapper, .form-wrapper {
+			border: 1px dotted blue;
+			background: red;
+			position: relative;
+/*			position: absolute;*/
+/*			top: 10px;*/
+			resize: both;
+			height: auto;
+		}
+		.box {
+			margin: 5px;
+			position:relative;
+/*			display: inline-block;*/
+/*			position: absolute;*/
+			width: 45%;
+/*			left: 200px;*/
+/*			top: 20px;*/
+		}
+		#BoxNumber1 {
+/*			right: 0;*/
+		}
+		#BoxNumber2 {
+/*			right: 0;*/
+		}
+		#BoxNumber3 {
+			left: 45%;
+		}
+		.inside {
+/*			display: run-in;*/
+		}
+		.inline {
+			width: auto;
+			min-width: 20%;
+/*			display: block;*/
+/*			display: inline;  */
+								/*this has no margins*/
+			display: inline-block;
+		}
+/*		now mine*/
+		.form-wrapper {
+			width: 60%;
+			left: 40%;
+			padding: 10px;
+/*			min-height: 500px;*/
+		}
+		.form-wrapper * {
+/*			position: absolute;*/
+/*			width: 100%;*/
+/*			display: block;*/
+		}
+		.formTitle {
+/*			position: absolute;*/
+			text-align: center;
+			height: 10%;
+			top: 0%;
+			bottom: 90%;
+			width: 100%;
+		}
+		.formContainer {
+			position: absolute;
+			height: 75%;
+			top: 25%;
+			bottom: 0%;
+			width: 100%;
+		}
+		.form {
+			position: absolute;
+			top: inherit;
+			bottom: inherit;
+			right: inherit;
+			left: inherit;
+		}
+		.input-wrap {
+			position: absolute;
+			top: 0%;
+			bottom: 20%;
+			width: 100%;
+		}
+		input[type="text"]{
+			display: inline-block;
+		}
+		.submitArea {
+			position: absolute;
+			right: 5%;
+			top: 80%;
+			bottom: 0%;
+			width: 10%;
+		}
+	</style>
+<!--	====================================-->
+	<div class="wrapper">
+		Wrapper
+		<div id="BoxNumber1" class="box">
+			BoxNumber1
+		</div>
+		<div id="BoxNumber2" class="box">
+			BoxNumber2
+		</div>
+		<div id="BoxNumber3" class="box">
+			BoxNumber3
+			<div id="BoxNumber4" class="box inside">
+				BoxNumber4e
+			</div>
+		</div>
+		<div id="BoxNumber5" class="box inline">
+			BoxNumber5
+		</div>
+		<div id="BoxNumber6" class="box inline">
+			BoxNumber6
+		</div>
+		<div id="BoxNumber5" class="box inline">
+			BoxNumber5
+		</div>
+		<div id="BoxNumber6" class="box inline">
+			BoxNumber6
+		</div>
+	</div>
+	
+	<!--  - - - - - - - - - - - - - - - - -->	
+	
+	<div class="form-wrapper">
+		
+<h3 class="formTitle">
+	Send Us A Message
+</h3>
+
+<div class="formContainer" id="thisForm">
+  <form>
+	  <div class="input-wrap">
+		  
+      <p>
+		  <label>
+			  First Name
+		  </label>
+		  <input type="text" id="NameField" name="firstname"/>
+      </p>
+
+      <p>
+		  <label>
+			  Email
+		  </label>
+		  <input type="email" id="emailField" name="emailAddress"/>
+      </p>
+
+      <p>
+		  <label>
+			  Remarks
+		  </label>
+		  <input type="text" id="remarksField" name="lastname"/>
+      </p>
+	  
+	  </div>
+
+	  <div class="submitArea">
+		  <style>
+			  .button {
+				  height: 50px;
+				  width: 50px;
+				  border-radius: 50px;
+			  }
+		  </style>
+      <input class="button" type="submit" value="Submit"/>
+	  </div>
+	  
+  </form>
+</div>
+		
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+</html>

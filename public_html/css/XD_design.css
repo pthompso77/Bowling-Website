@@ -1,0 +1,53 @@
+/*
+designs imported from Adobe XD
+*/
+
+/*Colors*/
+.Color1 {
+	color: #3A6941;
+}
+.Color2 {
+	color: #40864A;
+}
+.Color3 {
+	color: #B9AB42;
+}
+.bkgColor3 {
+	background-color: #B9AB42;
+}
+.Color4 {
+	color: #FFFFFF;
+}
+.TitleText {
+	color: #69633A;
+}
+.BorderColor {
+	color: #707070;
+}
+.MainTitleColor {
+color: #E22776
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+Character Styles
+*/
+.MainTitleCharStyle {
+	font: 80px InaiMathi, Verdana;
+	letter-spacing: 6px;
+	color: #FF00A8;	
+}
+.MainTextCharStyle {
+	font: 45px bold InaiMathi, Verdana;
+	letter-spacing: 5px;
+	color: #090071;	
+}
+.SectHeadTitle {
+	font: 40px InaiMathi, Verdana;
+	letter-spacing: 4px;
+	color: #3E42B9;
+}
+.NavBarText {
+	font: 26 InaiMathi, Verdana;
+	letter-spacing: 3px;
+	color: #69633A;
+}

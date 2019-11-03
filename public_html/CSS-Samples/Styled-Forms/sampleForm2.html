@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Styled Form</title>
+<style>
+
+body {
+   font-family: Verdana,sans-serif;
+   font-size: 12px;
+}
+
+label {
+  padding: 0;
+  width: 80px;
+  display: inline-block;
+}
+
+input[type=text] {
+  font-family: Verdana,sans-serif;
+  font-size: 12px;
+
+  background-color: transparent;
+  padding: 8px;
+  dislay: block;
+  border:none;
+  border-bottom:1px solid #505050;
+  width: 90%;
+}
+
+input[type=text]:focus {
+  outline-width: 0;
+  border: 1px solid #FF0000;
+}
+
+input[type=submit] {
+  font-family: Verdana,sans-serif;
+  font-size: 12px;
+
+  background-color: #FF0000;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #CC0000;
+}
+
+.formContainer {
+  width: 50%;
+  border-radius: 0 0 10px 10px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.formTitle {
+  font-size: 30px;
+  font-weight: 300;
+  width: 50%;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  background-color: #FF0000;
+  color: white;
+  padding: 20px;
+  margin-bottom: 0;
+}
+
+</style>
+</head>
+<body>
+
+<h3 class="formTitle">Input Form</h3>
+
+<div class="formContainer">
+  <form action="abc.php">
+      <p>
+      <input type="text" id="firstNameField" name="firstname">
+      <label>First Name</label>
+      </p>
+
+      <p>
+      <input type="text" id="lastNameField" name="lastname">
+      <label>Last Name</label>
+      </p>
+
+      <p>
+      <input type="text" id="emailField" name="emailAddress">
+      <label>Email</label>
+      </p>
+
+      <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+

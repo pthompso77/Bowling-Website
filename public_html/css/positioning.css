@@ -1,0 +1,214 @@
+.bodytest {
+    width: 1280px;
+    height: 1800px;
+}
+/* 
+    Created on : Oct 20, 2019, 6:28:33 PM
+    Author     : lex
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    min-height: 1000px;
+    /*max-width: 2100px;*/
+    position: relative;
+}
+.primaryHeader {
+    width: 100%;
+    height: 150px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*padding-top: 22px;*/
+    /*padding-bottom: 22px;*/
+    /*mine*/
+    position: relative;
+}
+.primaryFooter {
+    position: relative;
+    bottom: 0;
+    height: 30px;
+    width: 100%;
+    margin-top: 40px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+.container {
+    position: relative;
+    width: 98%;
+    /*margin: 10px;*/
+}
+.NavBarText {
+    height: 60px;
+    width: 150px;
+    display: inline-block;
+    padding: 20px 0;
+    margin: 5px;
+    text-align: center;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+Shared Header
+*/
+.headerElement {
+    position: absolute;
+    height: 100%;
+}
+#headerBallWrap {
+    width: 20%;
+    height: 100%;
+}
+#headerBowlBall {
+    width: 100px;
+    height: auto;
+    height: 100%;
+    width: auto;
+    left: 20%;
+    bottom: 5px;
+}
+#headerTextWrap {
+    right:0;
+    width: 80%;
+    padding:20px;
+}
+img {
+    height: auto;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+Navigation Bar
+*/
+.navBar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    left: 5%;
+    right: 5%;
+}
+
+.li_nav {
+    float: left;
+    width: 15%;
+}
+
+.li_nav a:hover {
+    border-bottom: 5px solid #B9AB42;
+}
+
+.navBar {
+    padding-top: 5px;
+    padding-bottom: 0;
+    position: relative;
+    height: 80px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+Main Image Carousel
+*/
+.mainImages {
+    width: 97%;
+    padding: 5px 10%;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+Main Content Area
+*/
+#mainContent {
+    margin: 50px 20px;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+Main Text Area
+*/
+.mainText {
+    display: block;
+    margin: 60px;
+    padding: 10px;
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - 
+Input Form
+*/
+.form-wrapper {
+    height: 500px;
+    width: 450px;
+    position: relative;
+    float: right;
+    padding: 0;
+}
+.formTitle {
+    position: absolute;
+    top: 0;
+    height: 20%;
+    bottom: 80%;
+    margin: 0;
+    padding: 30px 0;
+}
+.formContainer, .formTitle {
+    position: absolute;
+    width:90%
+}
+.formContainer {
+    padding: 20px;
+    position: absolute;
+    resize: vertical;
+    height: 80%;
+    top: 20%;
+    bottom: 0;
+}
+.form-wrap {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 50%;
+    width: 90%;
+}
+label {
+    width: 20%;
+    display: inline-block;
+    text-align: right;
+    padding: 5px;
+}
+label, input {
+    margin: 10px 0;
+}
+input[type=text], input[type=email], textarea {
+    display: inline-block;
+    padding: 5px;
+    resize: vertical;
+    width: 75%;
+    position: absolute;
+    right: 0;
+}
+#remarksField {
+    height: 100px;
+    overflow: auto;
+}
+input {
+    display: inline-block;
+}
+input[type=submit] {
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    height: 120px;
+    width: 120px;
+}

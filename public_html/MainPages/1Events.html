@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>Community</title>
+        <title>Events</title>
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/positioning.css">
         <link rel="stylesheet" href="../css/formstyle.css">
@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../css/XD_design.css">
 	<script src='../script/mainscripts.js'></script>
     </head>
-    <body onload="startTimer()">
+    <body onload = "startTimer()">
 
 	<!-- - - - - - - - Shared Header and Navigation - - - - - - - -->
 	<a href="../index.html">
@@ -28,7 +28,7 @@
 	<nav class="navBar">
 	    <ul>
 		<li class="li_nav"><a href="1Events.html">
-			<div class="NavBarText hasBorder">
+			<div id="selected" class="NavBarText hasBorder">
 			    Events
 			</div>
 		    </a></li>
@@ -43,7 +43,7 @@
 			</span>
 		    </a></li>
 		<li class="li_nav"><a href="Community.html">
-			<span id="selected" class="NavBarText hasBorder">
+			<span class="NavBarText hasBorder">
 			    Community
 			</span>
 		    </a></li>
@@ -67,38 +67,72 @@
 	<article id="mainContent" class="container">
 
 	    <section class=" mainImages container">
-		<img alt="Woman bowling" width="1005"
-		     src="../images/carousel/womanBowling_4288x2848.jpg"/>
+		<!--start carousel-->
+		<div class="mainImages container">
+		    <!--<img id="carousel_img" alt="Woman bowling" width="1005" width="800" src="../images/carousel/womanBowling_4288x2848.jpg"/>-->
+		    <img id="carousel_img"  width="800" src="../images/carousel/womanBowling_4288x2848.jpg"/>
+		</div>
+		<!--end carousel-->
 	    </section>	
 
 
-	    <section id="community_main" class="dev mainText MainTextCharStyle">
-		
-		<!--Next Event section-->
-		<section>
-		    
-		</section>		
-		<!--end Next event section-->
-		
-		<!--start: Two Columns-->
-		<div>
-		    
-		    <!--start: Community Forum-->
-		    <section>
-			
-		    </section>
-		    <!--end: Community Forum-->
-		    
-		    <!--start: Leave Remarks-->
-		    <aside>
-			<!--TODO call this a section???-->
-		    </aside>
-		    <!--end: Leave Remarks-->
-		    
-		</div>
-		<!--end: Two columns-->
-		
-		
+	    <section class="mainText MainTextCharStyle">
+
+		<!--Upcoming Events-->
+		<div id="upcoming_events" class="three_cols">
+
+		    <!--Column 1-->
+		    <article>
+
+			<div class="round_container">
+			    <div class="round_elem">
+				Round Element
+			    </div>
+			</div>
+			<!--details-->
+			<h4 class="subtitle4">subtitle4</h4>
+			<p class="normalText">
+			    Details here Details here Details here Details here Details here Details here Details here Details here Details here Details here Details here Details here 
+			</p>
+
+		    </article>
+
+
+		    <!--Column 2-->
+		    <article>
+
+			<div class="round_container">
+			    <div class="round_elem">
+				Round Element
+			    </div>
+			</div>
+			<!--details-->
+			<h4 class="subtitle4">subtitle4</h4>
+			<p class="normalText">
+			    Details here Details here Details here Details here Details here Details here Details here Details here Details here Details here Details here Details here 
+			</p>
+
+		    </article>
+
+
+		    <!--Column 3-->
+		    <article>
+
+			<div class="round_container">
+			    <div class="round_elem">
+				Round Element
+			    </div>
+			</div>
+			<!--details-->
+			<h4 class="subtitle4">subtitle4</h4>
+			<p class="normalText">
+			    Details here Details here Details here Details here Details here Details here Details here Details here Details here Details here Details here Details here 
+			</p>
+
+		    </article>
+
+		</div> <!--end three_cols-->
+
 	    </section>		
 
 	</article>

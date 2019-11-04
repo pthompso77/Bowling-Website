@@ -1,67 +1,63 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title>Leagues</title>
-	<!--        <link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/positioning.css">
-		<link rel="stylesheet" href="css/formstyle.css">
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/XD_design.css">-->
         <link rel="stylesheet" href="../css/styles.css">
         <link rel="stylesheet" href="../css/positioning.css">
         <link rel="stylesheet" href="../css/formstyle.css">
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/XD_design.css">
+	<script src='../script/mainscripts.js'></script>
     </head>
-    <body class="">
+    <body onload="startTimer()">
 
 	<!-- - - - - - - - Shared Header and Navigation - - - - - - - -->
 	<a href="../index.html">
 	    <header class="primaryHeader">
-	<span id="headerBallWrap" class="BorderColor hasBorder headerElement">
-	    <img id="headerBowlBall" class="headerElement" alt="grey bowling ball drawing" src="../images/ballLogo_533x640.png" />
-	</span>
-		
-	<span id="headerTextWrap" class="MainTitleColor hasBorder headerElement bkgColor3">
-		Bowling and Bonding
+		<span id="headerBallWrap" class="BorderColor hasBorder headerElement">
+		    <img id="headerBowlBall" class="headerElement" alt="grey bowling ball drawing" src="../images/ballLogo_533x640.png" />
+		</span>
+
+		<span id="headerTextWrap" class="MainTitleColor hasBorder headerElement bkgColor3">
+		    Bowling and Bonding
 	    </header>
 	</a>
 
 	<hr class="BorderColor clearfix">
 	<nav class="navBar">
-		<ul>
-		    <li class="li_nav"><a href="Events.html">
-			    <div class="NavBarText hasBorder">
-				Events
-			    </div>
-			</a></li>
-		    <li class="li_nav"><a href="Food_Drink.html">
-			    <span class="NavBarText hasBorder">
-				Food & Drink
-			    </span>
-			</a></li>
-		    <li class="li_nav"><a href="Leagues.html">
-			    <span class="NavBarText hasBorder">
-				Leagues
-			    </span>
-			</a></li>
-		    <li class="li_nav"><a href="Community.html">
-			    <span class="NavBarText hasBorder">
-				Community
-			    </span>
-			</a></li>
-		    <li class="li_nav"><a href="Directory.html">
-			    <span class="NavBarText hasBorder">
-				Directory
-			    </span>
-			</a></li>
-		    <li class="li_nav"><a href="Contact.html">
-			    <span class="NavBarText hasBorder">
-				Contact
-			    </span>
-			</a></li>
-		</ul>
+	    <ul>
+		<li class="li_nav"><a href="1Events.html">
+			<div class="NavBarText hasBorder">
+			    Events
+			</div>
+		    </a></li>
+		<li class="li_nav"><a href="Food_Drink.html">
+			<span class="NavBarText hasBorder">
+			    Food & Drink
+			</span>
+		    </a></li>
+		<li class="li_nav"><a href="Leagues.html">
+			<span id="selected" class="NavBarText hasBorder">
+			    Leagues
+			</span>
+		    </a></li>
+		<li class="li_nav"><a href="Community.html">
+			<span class="NavBarText hasBorder">
+			    Community
+			</span>
+		    </a></li>
+		<li class="li_nav"><a href="Directory.html">
+			<span class="NavBarText hasBorder">
+			    Directory
+			</span>
+		    </a></li>
+		<li class="li_nav"><a href="Contact.html">
+			<span class="NavBarText hasBorder">
+			    Contact
+			</span>
+		    </a></li>
+	    </ul>
 	</nav>
 	<hr class="BorderColor clearfix">
 
@@ -71,14 +67,95 @@
 	<article id="mainContent" class="container">
 
 	    <section class=" mainImages container">
-		<img alt="Woman bowling" width="1005"
-		     src="../images/womanBowling_4288x2848.jpg"/>
+		<!--start carousel-->
+		<div class="mainImages container">
+		    <!--<img id="carousel_img" alt="Woman bowling" width="1005" width="800" src="../images/carousel/womanBowling_4288x2848.jpg"/>-->
+		    <img id="carousel_img"  width="800" src="../images/carousel/womanBowling_4288x2848.jpg"/>
+		</div>
+		<!--end carousel-->
 	    </section>	
 
 
 	    <section class="mainText MainTextCharStyle">
-		Filler text (also placeholder text or dummy text) is text that shares some characteristics of a real written text, but is random or otherwise generated. It may be used to display a sample of fonts, generate text for testing, or to spoof an e-mail spam filter. The process of using filler text is sometimes called greeking, although the text itself may be nonsense, or largely Latin, as in Lorem ipsum.
+
+		<h2 class="MainTextCharStyle">Upcoming Competitions</h2>
+
+		<div id="upcoming_league" class="three_cols league">
+
+		    <!--Column 1-->
+		    <article>
+
+			<div class="round_container">
+			    <div class="round_elem">
+				Round Element
+			    </div>
+			</div>
+
+		    </article> 
+
+		    <!--Column 2-->
+		    <article>
+
+			<div class="round_container">
+			    <div class="round_elem">
+				Round Element
+			    </div>
+			</div>
+
+		    </article> 
+
+		    <!--Column 3-->
+		    <article>
+
+			<div class="round_container">
+			    <div class="round_elem">
+				Round Element
+			    </div>
+			</div>
+
+		    </article>
+
+		</div> <!--end three_cols-->
+
+		<!--League-->
+		<section>
+		<h2 class="MainTextCharStyle">Local Teams</h2>
+		<div id="league_list" class="league container">
+		    
+		    <!--tabs-->
+		    <div id="teams_list" class="tab">
+			<button class="tablink" onclick="openTeam(event, 'team1_members')">
+			    Team1
+			</button>
+			<button class="tablink" onclick="openTeam(event, 'team2_members')">
+			    Team2
+			</button>
+		    </div>
+		    <!--end tabs-->
+		    
+		    <!--Team 1-->
+		    <div style="display:none" id="team1_members" class="normalText tabContent">
+			<h3 class="MainTextColor">Team1</h3>
+			<span>Member1</span>
+			<span>Member2</span>
+			<span>Member3</span>
+		    </div>
+		    <!--Team 2-->
+		    <div style="display:none" id="team2_members" class="normalText tabContent">
+			<h3 class="MainTextColor">Team2</h3>
+			<span>Member1</span>
+			<span>Member2</span>
+			<span>Member3</span>
+		    </div>
+		    <!--end Teams lists-->
+		    
+		</div>
+		<!--end League list-->
+		</section>
+		<!--end League Section-->
+
 	    </section>		
+
 
 	</article>
 
@@ -88,8 +165,8 @@
 	<footer class="primaryFooter">
 	    Webmaster
 	</footer>
-	
-	
+
+
 
 
     </body>

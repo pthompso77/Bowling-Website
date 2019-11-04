@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <title>Image Swapping</title>
+      <style>
+         img {
+            max-width: 800px;
+            width: 100%;
+            height: auto;
+         }
+      </style>
+
+      <script type = "text/javascript">
+          function displayNextImage() {
+              x = (x + 1) % 4;           // replace 4 with number of images
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 5000);
+          }
+
+          var x = -1;
+          var images = [];
+          images[0] = "1361px-Ada_Lovelace2.jpg";
+          images[1] = "Portrait_of_Charles_Babbage1.jpg";
+          images[2] = "1503px-Ada_Lovelace_portrait1.jpg";
+          images[3] = "Lovelace_and_Babbage.jpg";
+      </script>
+   </head>
+
+   <body onload = "startTimer()">
+       <img id="img" src="Lovelace_and_Babbage.jpg" />
+
+       <p>Image Attributions</p>
+       Ada Lovelace: https://commons.wikimedia.org/wiki/File:Ada_Lovelace_portrait.jpg<br />
+       Ada Lovelace: https://en.wikipedia.org/wiki/Ada_Lovelace#/media/File:Ada_Lovelace.jpg<br />
+       Ada Lovelace and Charles Babbage: https://www.flickr.com/photos/stephenyeargin/7466501542<br />
+       Charles Babbage: https://en.wikipedia.org/wiki/File:Portrait_of_Charles_Babbage_(4672397).jpg<br />
+   </body>
+</html>

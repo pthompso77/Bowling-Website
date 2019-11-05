@@ -25,7 +25,10 @@ designs imported from Adobe XD
 	color: #707070;
 }
 .MainTitleColor {
-color: #E22776
+color: #E22776;
+}
+.MainTextColor {
+    color: #090071;
 }
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -37,7 +40,7 @@ Character Styles
 	color: #FF00A8;	
 }
 .MainTextCharStyle {
-	font: 45px bold InaiMathi, Verdana;
+	font: 40px bold InaiMathi, Verdana;
 	letter-spacing: 5px;
 	color: #090071;	
 }
@@ -50,4 +53,8 @@ Character Styles
 	font: 26 InaiMathi, Verdana;
 	letter-spacing: 3px;
 	color: #69633A;
+}
+.normalText {
+    font-size: 20px;
+    color: #34311D; 
 }

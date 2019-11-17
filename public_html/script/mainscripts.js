@@ -13,12 +13,18 @@ function displayNextImage() {
     imgElem.src = images[x];
     imgElem.alt = images[x];
 }
+function displayNextImage2() {
+    x = (x + 1) % 5;
+    imgElem = document.getElementById("carousel_img");
+    imgElem.src = images2[x];
+    imgElem.alt = images2[x];
+}
 
 function startTimer() {
     setInterval(displayNextImage, 10000);
 }
-function tryit() {
-    alert('ok');
+function startTimer2() {
+    setInterval(displayNextImage2, 10000);
 }
 
 var x = -1;
@@ -28,6 +34,13 @@ images[1] = "../images/carousel/live-concert-455762_1280.jpg";
 images[2] = "../images/carousel/band-984164_1280.jpg";
 images[3] = "../images/carousel/womanBowling_4288x2848.jpg";
 images[4] = "../images/carousel/lead-singer-455750_1280.jpg";
+
+var images2 = [];
+images2[0] = "images/carousel/ballOnLaneWithPins_1920x1271.jpg";
+images2[1] = "images/carousel/live-concert-455762_1280.jpg";
+images2[2] = "images/carousel/band-984164_1280.jpg";
+images2[3] = "images/carousel/womanBowling_4288x2848.jpg";
+images2[4] = "images/carousel/lead-singer-455750_1280.jpg";
 
 
 /* 
@@ -47,3 +60,14 @@ function openTeam(evt, teamName) {
     evt.currentTarget.className += " active";
 }
 
+/*
+ * Contact us
+ */
+function validateForm() {
+      if ((document.forms["contactForm"]["firstname"].value === "") ||
+         (document.forms["contactForm"]["emailAddress"].value === "") ) {
+         alert("First name and Email address must be filled in");
+         return false;
+      }
+   }
+   

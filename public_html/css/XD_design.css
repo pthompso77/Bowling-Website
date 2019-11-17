@@ -4,32 +4,60 @@ designs imported from Adobe XD
 
 /*Colors*/
 .Color1 {
+    /*dark green*/
 	color: #3A6941;
 }
 .Color2 {
+    /*slightly lighter green*/
 	color: #40864A;
 }
 .Color3 {
-	color: #B9AB42;
+	color: #B9AB42; /*brownish*/
+}
+.mainBkgColor {
+    background-color: #e66c76;
 }
 .bkgColor3 {
-	background-color: #B9AB42;
+    /*brown yellow*/
+	/*background-color: #ded068;*/
+        background-color: #89ccc1;
 }
 .Color4 {
+    /*white*/
 	color: #FFFFFF;
 }
 .TitleText {
+    /*brown green*/
 	color: #69633A;
 }
 .BorderColor {
+    /*gray*/
 	color: #707070;
 }
 .MainTitleColor {
-color: #E22776;
+    /*hot pink*/
+/*color: #E22776;*/
+color: #b3545b;
 }
 .MainTextColor {
-    color: #090071;
+     /*dark blue*/ 
+    /*color: #090071;*/
+    color: #8a6e6e;
 }
+
+/*
+complementary colors
+#e66c76 pinkish
+#76e66c greenish
+#6c81e6 blueish
+#5e65c7 another blue
+#8994cc light blue
+#a589cc light purple
+#89ccc1 light teal
+#e6a56c tanbrownish
+#8a6e6e red-gray
+*/
+
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - 
 Character Styles
@@ -40,9 +68,14 @@ Character Styles
 	color: #FF00A8;	
 }
 .MainTextCharStyle {
-	font: 40px bold InaiMathi, Verdana;
-	letter-spacing: 5px;
-	color: #090071;	
+	/*font: 40px bold InaiMathi, Verdana;*/
+	font: 28px bold InaiMathi, Verdana;
+	/*letter-spacing: 3px;*/
+        line-height: 1.5;
+	/*color: #5e65c7;*/
+        color: #5e65c7;
+        /*text-align: justify;*/
+        text-align: center;
 }
 .SectHeadTitle {
 	font: 40px InaiMathi, Verdana;
@@ -50,11 +83,20 @@ Character Styles
 	color: #3E42B9;
 }
 .NavBarText {
-	font: 26 InaiMathi, Verdana;
+	font: 14px InaiMathi, Verdana;
 	letter-spacing: 3px;
 	color: #69633A;
 }
 .normalText {
-    font-size: 20px;
+    font-size: 16px;
     color: #34311D; 
+    text-align: justify;
+}
+.mainText {
+    /*padding: 0 180px;*/
+}
+
+/*Border Style?*/
+.BorderStyles, .BorderStyles td {
+    border: 3px solid #8a6e6e;
 }

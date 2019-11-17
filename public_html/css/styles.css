@@ -40,11 +40,18 @@ body {
     border-color: #484848;
     padding: 18px 4px;
 }
+table {
+    border-color: #707070;
+}
 
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - 
 Input Form
 */
+.form-wrapper {
+    text-align: left;
+    /*font-size:*/ 
+}
 .formTitle {
     font-size: 30px;
     font-weight: 300;
@@ -79,17 +86,35 @@ input[type=submit] {
 .round_elem {
     font-family: Verdana,sans-serif;
     font-size: 16px;
-    background-color: #CB1357;
-    color: #090071;
+    font-weight: bold;
+    /*background-color: #CB1357;*/
+    background-color: #420071;
+    color: #0a96c9;
     border: none;
     border-radius: 100px;
-    cursor: pointer;
-    border: 2px solid green;
+    /*cursor: pointer;*/
+    border: 2px solid #76e66c;
 }
 input[type=submit]:hover {
     background-color: #A01050;
 }
 
+/* Community Section*/
+table.MainTextColor *{
+    color: #090071;
+}
+table.MainTextCharStyle *{
+	font: 22px bold InaiMathi, Verdana;
+	/*letter-spacing: 3px;*/
+        line-height: 1.5;
+	color: #5e65c7;	
+        text-align: justify;
+}
+
+/*Contact Section*/
+.hours-table *{
+    border-width: 0;
+}
 
 
 /*FOR TESTING*/

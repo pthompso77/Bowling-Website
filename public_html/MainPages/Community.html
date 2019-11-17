@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../css/XD_design.css">
 	<script src='../script/mainscripts.js'></script>
     </head>
-    <body onload="startTimer()">
+    <body class='mainBkgColor' onload="startTimer()">
 
 	<!-- - - - - - - - Shared Header and Navigation - - - - - - - -->
 	<a href="../index.html">
@@ -67,38 +67,52 @@
 	<article id="mainContent" class="container">
 
 	    <section class=" mainImages container">
-		<img alt="Woman bowling" width="1005"
-		     src="../images/carousel/womanBowling_4288x2848.jpg"/>
+		<!--start carousel-->
+		<div class="mainImages container">
+		    <!--<img id="carousel_img" alt="Woman bowling" width="1005" width="800" src="../images/carousel/womanBowling_4288x2848.jpg"/>-->
+		    <img id="carousel_img"  width="800" src="../images/carousel/womanBowling_4288x2848.jpg"/>
+		</div>
+		<!--end carousel-->
 	    </section>	
 
 
-	    <section id="community_main" class="dev mainText MainTextCharStyle">
-		
+	    <section id="community_main" class="mainText MainTextCharStyle">
+
 		<!--Next Event section-->
 		<section>
-		    
+		    <!--Coming soon!-->
 		</section>		
 		<!--end Next event section-->
-		
+
 		<!--start: Two Columns-->
 		<div>
-		    
+
 		    <!--start: Community Forum-->
 		    <section>
-			
+			<table class="MainTextColor MainTextCharStyle BorderStyles">
+			    <tbody>
+				<!--<tr><td><p><span>User’s Name</span></p></td><td><p><span>Comment (15+ words?)</span></p></td></tr>-->
+				<tr><td><p><span>Jesspare_101</span></p></td><td><p><span>I am on a drinking team with a bowling problem and Bowl-O-Fun is my favorite haunt!</span></p></td></tr>
+				<tr><td><p><span>Sara.Ott_mom</span></p></td><td><p><span>Meh…this place is ok. 3 out of 5 starts</span></p></td></tr>
+				<tr><td><p><span>Biceps2spare</span></p></td><td><p><span>Staff is friendly but arcade games are always broken</span></p></td></tr>
+				<tr><td><p><span>7ten_split</span></p></td><td><p><span>BASIC! But in all of the best ways. You get exactly what you pay for. Not many bells and whistles. 10 pins and a well oiled lane is all you need and this place delivers. The cheap snacks don’t hurt either.</span></p></td></tr>
+				<tr><td><p><span>Duhgirlfriend</span></p></td><td><p><span>BYEEEEE Felicia!</span></p></td></tr>
+				<tr><td><p><span>jnk87pskidt88</span></p></td><td><p><span>The shoes smell funny. Bowing is soooooo gross. You have to put your fingers is the same finger holes as strangers. No Purell in sight. IDK how or why ppl do this. Don’t even get me started on the shoes. Just EWW-Y-EWW!</span></p></td></tr>
+			    </tbody>
+			</table>
 		    </section>
 		    <!--end: Community Forum-->
-		    
+
 		    <!--start: Leave Remarks-->
 		    <aside>
 			<!--TODO call this a section???-->
 		    </aside>
 		    <!--end: Leave Remarks-->
-		    
+
 		</div>
 		<!--end: Two columns-->
-		
-		
+
+
 	    </section>		
 
 	</article>

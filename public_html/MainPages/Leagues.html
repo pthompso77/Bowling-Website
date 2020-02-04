@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../css/XD_design.css">
 	<script src='../script/mainscripts.js'></script>
     </head>
-    <body onload="startTimer()">
+    <body class='mainBkgColor' onload="startTimer()">
 
 	<!-- - - - - - - - Shared Header and Navigation - - - - - - - -->
 	<a href="../index.html">
@@ -132,6 +132,11 @@
 			</button>
 		    </div>
 		    <!--end tabs-->
+		    
+		    <!--no team selected-->
+		    <div id="no_team" class="normalText tabContent">
+			<h3 style="text-align: center; padding-top:50px;" class="MainTextColor">select a team</h3>
+		    </div>
 		    
 		    <!--Team 1-->
 		    <div style="display:none" id="team1_members" class="normalText tabContent">

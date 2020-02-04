@@ -8,10 +8,9 @@
         <link rel="stylesheet" href="css/formstyle.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/XD_design.css" type="text/css"/>
-
+	<script src='script/mainscripts.js'></script>
     </head>
-
-    <body class="">
+    <body onload = "startTimer2()">
 
         <!-- - - - - - - - Shared Header and Navigation - - - - - - - -->
         <a href="index.html">
@@ -68,13 +67,21 @@
         <article id="mainContent" class=" container">
 
             <section class=" mainImages container">
-                <img alt="Woman bowling" width="1005"
-                     src="images/carousel/womanBowling_4288x2848.jpg"/>
+                <!--start carousel-->
+		<div class="mainImages container">
+		    <!--<img id="carousel_img" alt="Woman bowling" width="1005" width="800" src="../images/carousel/womanBowling_4288x2848.jpg"/>-->
+		    <img id="carousel_img"  width="800" src="images/carousel/womanBowling_4288x2848.jpg"/>
+		</div>
+		<!--end carousel-->
             </section>	
 
 
             <section class="mainText MainTextCharStyle">
-                Welcome to Bowl-O-Fun! This is the premiere Asheville Bowling Alley with all of the accommodations required for a good time.  We offer a la carte games and shoe rentals as well as packaged deals. We have offerings to meet anyone’s or any ground’s needs. Come on down to Bowl-O-Fun and we will set you up!
+                Welcome to Bowl-O-Fun! This is the premiere Asheville Bowling Alley with 
+		all of the accommodations required for a good time.  
+		<br><br>We offer a la carte games and shoe rentals as well as packaged deals.
+		We have offerings to meet anyone’s or any group’s needs. 
+		<br> <br>Come on down to Bowl-O-Fun and we will set you up!
             </section>		
 
         </article>

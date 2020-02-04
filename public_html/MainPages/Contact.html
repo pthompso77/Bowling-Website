@@ -10,54 +10,54 @@
         <link rel="stylesheet" href="../css/XD_design.css">
 	<script src='../script/mainscripts.js'></script>
     </head>
-    <body onload = "startTimer()">
+    <body class='mainBkgColor' onload = "startTimer()">
 
 	<!-- - - - - - - - Shared Header and Navigation - - - - - - - -->
 	<a href="../index.html">
 	    <header class="primaryHeader">
-	<span id="headerBallWrap" class="BorderColor hasBorder headerElement">
-	    <img id="headerBowlBall" class="headerElement" alt="grey bowling ball drawing" src="../images/ballLogo_533x640.png" />
-	</span>
-		
-	<span id="headerTextWrap" class="MainTitleColor hasBorder headerElement bkgColor3">
-		Bowling and Bonding
+		<span id="headerBallWrap" class="BorderColor hasBorder headerElement">
+		    <img id="headerBowlBall" class="headerElement" alt="grey bowling ball drawing" src="../images/ballLogo_533x640.png" />
+		</span>
+
+		<span id="headerTextWrap" class="MainTitleColor hasBorder headerElement bkgColor3">
+		    Bowling and Bonding
 	    </header>
 	</a>
 
 	<hr class="BorderColor clearfix">
 	<nav class="navBar">
-		<ul>
-		    <li class="li_nav"><a href="1Events.html">
-			    <div class="NavBarText hasBorder">
-				Events
-			    </div>
-			</a></li>
-		    <li class="li_nav"><a href="Food_Drink.html">
-			    <span class="NavBarText hasBorder">
-				Food & Drink
-			    </span>
-			</a></li>
-		    <li class="li_nav"><a href="Leagues.html">
-			    <span class="NavBarText hasBorder">
-				Leagues
-			    </span>
-			</a></li>
-		    <li class="li_nav"><a href="Community.html">
-			    <span class="NavBarText hasBorder">
-				Community
-			    </span>
-			</a></li>
-		    <li class="li_nav"><a href="Directory.html">
-			    <span class="NavBarText hasBorder">
-				Directory
-			    </span>
-			</a></li>
-		    <li class="li_nav"><a href="Contact.html">
-			    <span class="NavBarText hasBorder">
-				Contact
-			    </span>
-			</a></li>
-		</ul>
+	    <ul>
+		<li class="li_nav"><a href="1Events.html">
+			<div class="NavBarText hasBorder">
+			    Events
+			</div>
+		    </a></li>
+		<li class="li_nav"><a href="Food_Drink.html">
+			<span class="NavBarText hasBorder">
+			    Food & Drink
+			</span>
+		    </a></li>
+		<li class="li_nav"><a href="Leagues.html">
+			<span class="NavBarText hasBorder">
+			    Leagues
+			</span>
+		    </a></li>
+		<li class="li_nav"><a href="Community.html">
+			<span class="NavBarText hasBorder">
+			    Community
+			</span>
+		    </a></li>
+		<li class="li_nav"><a href="Directory.html">
+			<span class="NavBarText hasBorder">
+			    Directory
+			</span>
+		    </a></li>
+		<li class="li_nav"><a href="Contact.html">
+			<span id="selected" class="NavBarText hasBorder">
+			    Contact
+			</span>
+		    </a></li>
+	    </ul>
 	</nav>
 	<hr class="BorderColor clearfix">
 
@@ -76,7 +76,96 @@
 	    </section>	
 
 
-	    <section class="dev mainText MainTextCharStyle">
+	    <section class="mainText MainTextCharStyle">
+
+		<!--Contact Information-->
+		<div class="form-wrapper">
+		    Bowl-O-Fun <br>
+		    256 Ballorama Pl.<br>
+		    Asheville, NC 28804<br>
+		    <aside>
+			<h4>
+			    Hours
+			</h4>
+			<table class="hours-table normalText">
+			    <tr>
+				<td class='weekday'>Sunday</td>
+				<td class='hours'>10:00am - 11:00pm</td>
+			    </tr>
+			    <tr>
+				<td class='weekday'>Monday</td>
+				<td class='hours'>10:00am - 11:00pm</td>
+			    </tr>
+			    <tr>
+				<td class='weekday'>Tuesday</td>
+				<td class='hours'>10:00am - 11:00pm</td>
+			    </tr>
+			    <tr>
+				<td class='weekday'>Wednesday</td>
+				<td class='hours'>10:00am - 11:00pm</td>
+			    </tr>
+			    <tr>
+				<td class='weekday'>Thursday</td>
+				<td class='hours'>10:00am - 11:00pm</td>
+			    </tr>
+			    <tr>
+				<td class='weekday'>Friday</td>
+				<td class='hours'>10:00am - 11:00pm</td>
+			    </tr>
+			    <tr>
+				<td class='weekday'>Saturday</td>
+				<td class='hours'>10:00am - 11:00pm</td>
+			    </tr>
+			</table>
+		    </aside>
+		</div>
+
+
+		<!--Contact Form-->
+
+		<div class="form-wrapper">
+		    <h3 class="formTitle">
+			Send Us A Message
+		    </h3>
+
+		    <div class="formContainer" id="thisForm">
+			<form class='normalText' name="contactForm" action="mailto:thompsonpe19@students.ecu.edu" method="post" enctype="text/plain" onSubmit="return validateForm()">
+
+			    <div id='contact-form' class="form-wrap">
+
+				<p>
+				    <label>
+					First Name
+				    </label>
+				    <input type="text" id="NameField" name="firstname"/>
+				</p>
+
+				<p>
+				    <label>
+					Email
+				    </label>
+				    <input type="email" id="emailField" name="emailAddress"/>
+				</p>
+
+				<p>
+				    <label>
+					Remarks
+				    </label>
+				    <!--		  <input type="text" id="remarksField" name="lastname"/>-->
+				    <textarea id="remarksField" form="thisForm"></textarea>
+				</p>
+
+			    </div>
+
+			    <div>
+				<input type="submit" value="Submit"/>
+			    </div>
+
+			</form>
+		    </div>
+
+		</div>
+
 
             </section>		
 
@@ -88,8 +177,8 @@
 	<footer class="primaryFooter">
 	    Webmaster
 	</footer>
-	
-	
+
+
 
 
     </body>
